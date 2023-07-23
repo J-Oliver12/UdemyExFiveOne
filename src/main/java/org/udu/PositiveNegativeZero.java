@@ -14,6 +14,10 @@ public class PositiveNegativeZero {
         printConversion(-5.6);
         printConversion(25.42);
         printConversion(75.114);
+
+        printMegaBytesAndKiloBytes(2500);
+        printMegaBytesAndKiloBytes(-1024);
+        printMegaBytesAndKiloBytes(5000);
     }
 
 
@@ -66,6 +70,38 @@ public class PositiveNegativeZero {
     }
     */
 
+    public static void printMegaBytesAndKiloBytes(int kiloBytes) {
+
+        if (kiloBytes < 0) {
+            System.out.println("Invalid Value");
+        } else {
+            int megaBytes = kiloBytes / 1024;
+            int remainingKiloBytes = kiloBytes % 1024;
+            System.out.println(kiloBytes + " KB = " + megaBytes + " MB and " + remainingKiloBytes + " KB");
+        }
+
+    }
+
+
+        /*
+        int kiloByte = 1024;
+        int megaByte = 1;
+        int oneMegaByte = kiloByte * megaByte;
+        int bytesToMega = (kiloBytes / oneMegaByte);
+        int modulus = kiloBytes % 1024;
+
+        if (kiloBytes < 0) {
+            System.out.println("Invalid Value");
+        } else {
+            System.out.println(kiloBytes + " KB = " + bytesToMega + " MB and " + modulus + " KB ");
+        }
+    }
+         */
+
+/*
+        ### Alternative:
+        System.out.println((kiloBytes < 0) ? "Invalid Value" : (kiloBytes +" KB = " + bytesToMega + " MB and "  + modulus + " KB " ));
+*/
 
 }
 
