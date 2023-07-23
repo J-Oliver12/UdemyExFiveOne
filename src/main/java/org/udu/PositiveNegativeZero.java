@@ -8,6 +8,12 @@ public class PositiveNegativeZero {
         CheckNumber1(5);
         CheckNumber1(0);
         CheckNumber1(-7);
+
+        printConversion(1.5);
+        printConversion(10.25);
+        printConversion(-5.6);
+        printConversion(25.42);
+        printConversion(75.114);
     }
 
 
@@ -30,4 +36,37 @@ public class PositiveNegativeZero {
     }
 
 
+    public static long toMilesPerHour(double kilometersPerHour) {
+
+        if (kilometersPerHour < 0) {
+            return -1;
+        }
+
+        return Math.round(kilometersPerHour / 1.609);
+    }
+
+    public static void printConversion(double kilometersPerHour) {
+
+        long milesPerHour = toMilesPerHour(kilometersPerHour);
+
+        System.out.println((milesPerHour < 0) ? "Invalid Value" : (kilometersPerHour + " km/h = " + milesPerHour + " mi/h"));
+    }
+
+    /*     ### Alternative:
+    public static void printConversion(double kilometersPerHour) {
+
+        long milesPerHour = toMilesPerHour(kilometersPerHour);
+
+        if (milesPerHour < 0) {
+            System.out.println("Invalid Value");
+        } else {
+            System.out.println(kilometersPerHour + " km/h = " + milesPerHour + " mi/h");
+        }
+
+    }
+    */
+
+
 }
+
+
