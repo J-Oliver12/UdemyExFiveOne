@@ -1,4 +1,5 @@
 package org.udu;
+
 public class PositiveNegativeZero {
 
     public static void main(String[] args) {
@@ -18,6 +19,9 @@ public class PositiveNegativeZero {
         printMegaBytesAndKiloBytes(2500);
         printMegaBytesAndKiloBytes(-1024);
         printMegaBytesAndKiloBytes(5000);
+        printMegaBytesAndKiloBytes(800);
+
+        shouldWakeUp(true,6);
     }
 
 
@@ -102,6 +106,17 @@ public class PositiveNegativeZero {
         ### Alternative:
         System.out.println((kiloBytes < 0) ? "Invalid Value" : (kiloBytes +" KB = " + bytesToMega + " MB and "  + modulus + " KB " ));
 */
+
+    public static boolean shouldWakeUp(boolean barking, int hourOfDay) {
+
+        if (hourOfDay < 0 || hourOfDay > 23) {
+            return false;
+        } else {
+            return barking && (hourOfDay < 8 || hourOfDay >= 23 );
+
+        }
+    }
+
 
 }
 
