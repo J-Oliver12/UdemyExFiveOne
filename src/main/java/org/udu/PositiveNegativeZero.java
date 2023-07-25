@@ -29,6 +29,21 @@ public class PositiveNegativeZero {
         System.out.println(shouldWakeUp(true, 24));
 
         testingSwitch();
+
+        PrintNumberInWord(0);
+        PrintNumberInWord(1);
+        PrintNumberInWord(2);
+        PrintNumberInWord(3);
+        PrintNumberInWord(4);
+        PrintNumberInWord(5);
+        PrintNumberInWord(6);
+        PrintNumberInWord(7);
+        PrintNumberInWord(8);
+        PrintNumberInWord(9);
+        PrintNumberInWord(-5);
+        PrintNumberInWord(12);
+
+
     }
 
 
@@ -131,7 +146,14 @@ public class PositiveNegativeZero {
             case 2:
                 System.out.println("Value is 2");
                 break;
-            case 3: case 4: case 5: case 6: case 7: case 8: case 9: case 10:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10:
                 System.out.println("Value is between 3 and 10");
                 System.out.println("Values is actual: " + switchValue);
                 break;
@@ -142,9 +164,63 @@ public class PositiveNegativeZero {
 
     }
 
+    public static void PrintNumberInWord(int wholeNumber) {
+
+//        String number = switch (wholeNumber) {
+//            case 0 -> "ZERO";
+//            case 1 -> "ONE";
+//            case 2 -> "TWO";
+//            case 3 -> "THREE";
+//            case 4 -> "FOUR";
+//            case 5 -> "FIVE" ;
+//            case 6 -> "SIX";
+//            case 7 -> "SEVEN";
+//            case 8 -> "EIGHT";
+//            case 9 -> "NINE";
+//            default -> "OTHER";
+//        };
+//        System.out.println(number);
+//  }
+
+        String number;
+        switch (wholeNumber) {
+            case 0:
+                number = "ZERO";
+                break;
+            case 1:
+                number = "ONE";
+            case 2:
+                number = "TWO";
+                break;
+            case 3:
+                number = "THREE";
+                break;
+            case 4:
+                number = "FOUR";
+                break;
+            case 5:
+                number = "FIVE";
+            case 6:
+                number = "SIX";
+                break;
+            case 7:
+                number = "SEVEN";
+                break;
+            case 8:
+                number = "EIGHT";
+            case 9:
+                number = "NINE";
+                break;
+            default:
+                number = "OTHER";
+                break;
+        }
+        System.out.println(number);
+
+    }
+
+
 }
-
-
 
 
 
