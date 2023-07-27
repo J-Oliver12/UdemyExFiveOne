@@ -182,40 +182,62 @@ public class PositiveNegativeZero {
 //        System.out.println(number);
 //  }
 
-        String number;
-        switch (wholeNumber) {
-            case 0:
-                number = "ZERO";
-                break;
-            case 1:
-                number = "ONE";
-            case 2:
-                number = "TWO";
-                break;
-            case 3:
-                number = "THREE";
-                break;
-            case 4:
-                number = "FOUR";
-                break;
-            case 5:
-                number = "FIVE";
-            case 6:
-                number = "SIX";
-                break;
-            case 7:
-                number = "SEVEN";
-                break;
-            case 8:
-                number = "EIGHT";
-            case 9:
-                number = "NINE";
-                break;
-            default:
-                number = "OTHER";
-                break;
+//        String number;
+//        switch (wholeNumber) {
+//            case 0:
+//                number = "ZERO";
+//                break;
+//            case 1:
+//                number = "ONE";
+//            case 2:
+//                number = "TWO";
+//                break;
+//            case 3:
+//                number = "THREE";
+//                break;
+//            case 4:
+//                number = "FOUR";
+//                break;
+//            case 5:
+//                number = "FIVE";
+//            case 6:
+//                number = "SIX";
+//                break;
+//            case 7:
+//                number = "SEVEN";
+//                break;
+//            case 8:
+//                number = "EIGHT";
+//            case 9:
+//                number = "NINE";
+//                break;
+//            default:
+//                number = "OTHER";
+//                break;
+//        }
+//        System.out.println(number);
+
+        if (wholeNumber < 0  || wholeNumber > 9) {
+            System.out.println("OTHER");
+        } else if (wholeNumber == 1) {
+            System.out.println("ONE");
+        } else if (wholeNumber == 2) {
+            System.out.println("TWO");
+        } else if (wholeNumber == 3) {
+            System.out.println("THREE");
+        } else if (wholeNumber == 4) {
+            System.out.println("FOUR");
+        } else if (wholeNumber == 5) {
+            System.out.println("FIVE");
+        } else if (wholeNumber == 6) {
+            System.out.println("SIX");
+        } else if (wholeNumber == 7) {
+            System.out.println("SEVEN");
+        } else if (wholeNumber == 8) {
+            System.out.println("EIGHT");
+        } else if (wholeNumber == 9) {
+            System.out.println("NINE");
         }
-        System.out.println(number);
 
     }
 
